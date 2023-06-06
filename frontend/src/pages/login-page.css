@@ -1,0 +1,126 @@
+html body {
+    font-family: "Helvetica", Sans-Serif;
+    background: cadetblue;
+}
+
+.LoginPage{
+    width: 400px;
+    height: 615px;
+    background-color: rgb(255, 255, 255);
+}
+
+.LogoBG{
+    width : 400px;
+    height: 120px;
+    background-color: #fb8701;
+}
+.semiCircle{
+    width : 400px;
+    height: 150px;
+    border-radius:0 0 13rem 13rem;
+    background-color: #fb8701;
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    margin-top: 0px;
+    padding-top: 30px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.logo{
+    margin-top: 40px;
+    text-align: center;
+
+}
+
+.Buttons{
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* button {
+    display: inline-block;
+    padding: 24px 32px;
+    border: 0;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: #fb8701;
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(30px);
+    color: rgba(255, 0, 0, 0.8);
+    font-size: 14px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+ 
+button:hover {
+    background-color: rgba(255,255,255,0.2);
+  } */
+/* button {
+    background-color: #fb8701;
+    border-radius: 30%;
+
+} */
+
+
+
+/* CSS */
+.button-5 {
+
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fb8701;
+  border: 1px solid transparent;
+  border-radius: .90rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 300px;
+  margin-top: 10px;
+}
+
+.button-5:hover,
+.button-5:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+  transform: translateY(-1px);
+}
+
+.button-5:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+.sign-in-logos{
+    margin-top: 0px;
+    text-align: center;
+}
+
+.sign-in-logos img{
+    margin-left: 25px;
+    margin-right: 25px;
+}
