@@ -1,14 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import App from './App';
 import LoginPage from './pages/login-page';
 import reportWebVitals from './reportWebVitals';
-
+import {Routes, Route} from 'react-router-dom'
+import { MemoryRouter as Router} from 'react-router-dom';
+import { createMemoryHistory /* , createBrowserHistory */ } from 'history';
+import LoginCredPage from './pages/login-cred';
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const history = createMemoryHistory();
 root.render(
-  <React.StrictMode>
-    <LoginPage />
-  </React.StrictMode>
+    <Router>
+    <App/>
+   </Router>
+
 );
 
 // If you want to start measuring performance in your app, pass a function

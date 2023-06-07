@@ -1,10 +1,10 @@
 {
   "short_name": "Your Extension Name",
-  "name": "Your Extension Name",
+  "name": "Slother",
   "icons": {
-    "16": "favicon.ico",
-    "48": "logo192.png",
-   "128": "logo512.png"
+    "16": "sloth-icon.png",
+    "48": "sloth-icon.png",
+   "128": "sloth-icon.png"
   },
   "start_url": ".",
   "display": "standalone",

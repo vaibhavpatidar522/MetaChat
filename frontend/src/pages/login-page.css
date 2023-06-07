@@ -1,12 +1,15 @@
 html body {
     font-family: "Helvetica", Sans-Serif;
-    background: cadetblue;
+    background: rgb(108, 100, 100);
+    max-height: 615px;
+    overflow: hidden;
 }
 
 .LoginPage{
     width: 400px;
     height: 615px;
     background-color: rgb(255, 255, 255);
+    overflow: hidden;
 }
 
 .LogoBG{
@@ -40,34 +43,6 @@ h1{
     margin-top: 10px;
 }
 
-/* button {
-    display: inline-block;
-    padding: 24px 32px;
-    border: 0;
-    text-decoration: none;
-    border-radius: 15px;
-    background-color: #fb8701;
-    border: 1px solid rgba(255,255,255,0.1);
-    backdrop-filter: blur(30px);
-    color: rgba(255, 0, 0, 0.8);
-    font-size: 14px;
-    letter-spacing: 2px;
-    cursor: pointer;
-    text-transform: uppercase;
-  }
- 
-button:hover {
-    background-color: rgba(255,255,255,0.2);
-  } */
-/* button {
-    background-color: #fb8701;
-    border-radius: 30%;
-
-} */
-
-
-
-/* CSS */
 .button-5 {
 
   align-items: center;
@@ -124,3 +99,5 @@ button:hover {
     margin-left: 25px;
     margin-right: 25px;
 }
+
+
