@@ -1,7 +1,12 @@
 import './login-page.css';
+import {Routes, Route, useNavigate} from 'react-router-dom';
 
 
 function LoginPage() {
+  const navigate = useNavigate();
+  const navigateToLoginCred = () => {
+    navigate('/login-details');
+  };
     return (
       <div className="App">
         <div className="LoginPage">
@@ -13,7 +18,7 @@ function LoginPage() {
             </div>
             <div className="semiCircle"></div>
             <div className="Buttons">
-            <button class="button-5" role="button">Login</button>
+            <button class="button-5" role="button" onClick={navigateToLoginCred}>Login</button>
             <br></br>
             <button class="button-5" role="button">Sign up</button>
             <br></br>
