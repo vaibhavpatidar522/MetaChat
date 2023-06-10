@@ -8,6 +8,9 @@ function PinPage() {
   const navigateToHomePage =() =>{
     navigate('/home-page')
   }
+  const navigateToChatPage =() =>{
+    navigate('/chat-list')
+  }
     return (
       <div className="App">
         <div className="LoginPage">
@@ -21,7 +24,7 @@ function PinPage() {
             <div className='pin-area'>
             <label>Enter your pin</label>
             <input type="password"/>
-            <button type="submit">LOGIN</button>
+            <button type="submit" onClick={navigateToChatPage}>LOGIN</button>
             <h2 onClick={navigateToHomePage}>Sign in with another account</h2>
             </div>
             

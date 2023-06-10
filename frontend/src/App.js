@@ -5,6 +5,7 @@ import LoginPage from './pages/login-page';
 import LoginCredPage from './pages/login-cred';
 import SignUpPage from './pages/signup-page';
 import PinPage from './pages/pin-page';
+import ChatList from './pages/chat-list';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path='/home-page' element={<LoginPage/>}/>
         <Route path='/login-details' element={<LoginCredPage/>}/>
         <Route path='/signup-page' element = {<SignUpPage/>}/>
+        <Route path='/chat-list' element ={<ChatList/>}/>
       </Routes>
     </div>
   );
