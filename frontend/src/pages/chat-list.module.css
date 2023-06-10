@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+input {
+    caret-color: red;
+  }
+.backButton{
+    display: flex;
+    justify-content:left;
+
+}
+.backButton img{
+    margin-top: 20px;
+}
+
+.backButton:hover{
+    cursor: pointer;
+
+}
+.logo img:hover{
+    cursor: pointer;
+
+}
+html body {
+  font-family: "Helvetica", Sans-Serif;
+  background: rgb(108, 100, 100);
+  max-height: 615px;
+  overflow: hidden;
+}
+
+.LoginPage{
+  width: 400px;
+  height: 615px;
+  background-color: #fb8701;
+  overflow: hidden;
+}
+
+.LogoBG{
+  width : 400px;
+  height: 70px;
+  background-color: #fb8701;
+}
+
+.listSpace{
+    height: 545px;
+    background-color: #ffffff;
+    border-radius: 2.5rem 2.5rem 0 0;
+    /* box-shadow: outset 6px 6px 6px #cbced1, outset -6px -6px 6px white; */
+    box-shadow: -2px -2px 2px 2px rgba(0, 0, 0, 0.191);
+    padding-top: 20px;
+}
+
+
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /* position: relative; */
+ 
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #fd8700;
+  border-right: none;
+  margin-left: 25px;
+  height: 36px;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  color: #9DBFAF;
+  margin-top: 15px;
+
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 30px;
+  border: 1px solid #ffe0bd;
+  background: #fb8701;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 10px;
+  box-shadow: 0 0 0 0 ;
+  margin-top: 18px;
+}
+.searchButton:hover{
+    background-color: rgba(0, 0, 0, 0.301);
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+
+    display: flex;
+    flex-direction: row;
+
+  /* transform: translate(-50%, -50%); */
+}
+
+.threeDots{
+    margin-left: 30px;
+}
+
+.threeDots:hover{
+    height: 40px;
+    margin-top: 15px;
+}
+
+.chatPlate{
+
+    width: 400px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 15px;
+
+}
+.userDetails{
+    text-align: left;
+    margin-left: 10px;
+}
+
+.userDetails h2{
+    font-size:20px;
+    text-decoration:solid;
+    margin: 0;
+
+}
+
+.userDetails h3{
+    font-size: small;
+    text-decoration: none;
+    margin: 0px;
+    
+}

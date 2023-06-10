@@ -110,7 +110,7 @@ html body {
     background: #ecf0f3;
     padding: 10px;
     padding-left: 20px;
-    height: 50px;
+    height: 35px;
     font-size: 14px;
     border-radius: 50px;
     box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
@@ -144,6 +144,14 @@ html body {
     padding: 2px;
   }
 
-.inputs h2{
-  margin-top: 30px;
+h2{
+    text-decoration: underline;
+    font-size: medium;
+}
+
+h2:hover{
+    font-size: large;
+    cursor: pointer;
+    transition-delay: 50ms;
+    
 }
