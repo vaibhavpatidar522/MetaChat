@@ -5,13 +5,21 @@ import {useNavigate} from 'react-router-dom';
 
 function LoginCredPage() {
 
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [token, setToken] = useState('not logged in');
-  const navigate = useNavigate();
+ 
   
-  const navigateHome = () => {
-        navigate('/');
+  
+
+    const navigate = useNavigate();
+    const navigateHome = () => {
+        navigate(-1);
+      };
+      const navigateToSignUpPage = () => {
+        navigate('/signup-page');
+
       };
 
 
@@ -74,7 +82,7 @@ function LoginCredPage() {
                 <input type="password" placeholder="Min 6 charaters long" onChange={e =>  setPassword(e.target.value)}
         value={password}/>
                 <button type="submit" onClick={handleSubmit }>LOGIN</button>
-            <h1>{token}</h1>
+                <h2 onClick={navigateToSignUpPage}>Not a member? sign up</h2>
             </div>
             </div>
             </div>
