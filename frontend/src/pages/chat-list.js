@@ -1,14 +1,17 @@
 import style from './chat-list.module.css';
 import {useNavigate} from 'react-router-dom';
 
+const myName = "my_name";
+const userName2 = "User_Name_2";
+const lastMessage = "Last message, lorem ipsum lavda lassan 12 am lorem"
 
 function ChatList() {
     const navigate = useNavigate();
     const navigateHome = () => {
         navigate(-1);
       };
-      const navigateToSignUpPage = () => {
-        navigate('/signup-page');
+      const navigateToChat = () => {
+        navigate("/" + myName + userName2);
       };
     return (
       <div className={style.App}>
@@ -30,10 +33,10 @@ function ChatList() {
             </div>
             <div className={style.listSpace}>
                 <div className={style.userLists}>
-                    <UserPlate/>
-                    <UserPlate/>
-                    <UserPlate/>
-                    <UserPlate/>
+                    <UserPlate />
+                    <UserPlate />
+                    <UserPlate />
+                    <UserPlate />
                     </div>
                 
                 </div>
@@ -48,13 +51,19 @@ function ChatList() {
     );
   }
   function UserPlate(){
-    const userName = "User Name"
-    const lastMessage = "Last message, lorem ipsum lavda lassan 12 am lorem"
+    const navigate = useNavigate();
+    const navigateHome = () => {
+        navigate(-1);
+      };
+      const navigateToChat = () => {
+        navigate("/" + myName + userName2);
+      };
+
     return (
-        <div className={style.chatPlate}>
+        <div className={style.chatPlate} onClick={navigateToChat}>
             <img src={require("../logos/default-user-logo.png")} alt="user Profile"/>
             <div className={style.userDetails}>
-                <h2>{userName}</h2>
+                <h2>{userName2}</h2>
                 <h3>{lastMessage}</h3>
             </div>
 
@@ -62,4 +71,5 @@ function ChatList() {
     )
   }
 
+export {myName, userName2};
 export default ChatList;
