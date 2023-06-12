@@ -7,24 +7,26 @@ function LoginPage() {
   const navigateToLoginCred = () => {
     navigate('/login-details');
   };
+
     return (
       <div className="App">
         <div className="LoginPage">
             <div className="LogoBG">
                 <h1>SLOTHER</h1>
                 <div className = "logo">
-                    <img src={require("../logos/sloth-icon.png")} height = "120 px" />
+                    <img src={require("../logos/sloth-icon.png")} height = "120 px" alt='logo'/>
                 </div>
             </div>
             <div className="semiCircle"></div>
             <div className="Buttons">
-            <button class="button-5" role="button" onClick={navigateToLoginCred}>Login</button>
+            <button class="button-5"  onClick={navigateToLoginCred}>Login</button>
+            {/* <button class="button-5"  onClick={handleSubmit} >Login</button> */}
             <br></br>
-            <button class="button-5" role="button">Sign up</button>
+            <button class="button-5" >Sign up</button>
             <br></br>
             <br></br>
             <hr width = "70%"></hr>
-            <button class="button-5" role="button">Sign in using google</button>
+            <button class="button-5" >Sign in using google</button>
             <br></br>
             <h4>Use Other Sign in options</h4>
             </div>

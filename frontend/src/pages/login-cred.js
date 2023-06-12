@@ -1,12 +1,54 @@
+import { useState } from 'react';
 import style from './login-cred.module.css';
 import {useNavigate} from 'react-router-dom';
 
 
 function LoginCredPage() {
-    const navigate = useNavigate();
-    const navigateHome = () => {
+
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [token, setToken] = useState('not logged in');
+  const navigate = useNavigate();
+  
+  const navigateHome = () => {
         navigate('/');
       };
+
+
+ 
+
+      
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // fetch('http://localhost:3001/api/hello').then(res => res.json()).then((data) => console.log(data))
+
+
+    fetch('http://localhost:3001/api/users/login', {
+       method: 'POST',
+       body: JSON.stringify({
+        email,
+        password,
+       }),
+       headers: {
+          'Content-type': 'application/json; charset=UTF-8',
+       },
+    })
+       .then((res) => res.json())
+       .then((post) => {
+          console.log(post.token)
+          setEmail('')
+          setPassword('')
+          localStorage.setItem('token', post.token);
+          setToken(localStorage.getItem('token'))
+
+
+       })
+       .catch((err) => {
+          console.log(err.message);
+       });
+  }
+
+
     return (
       <div className={style.App}>
         <div className={style.LoginPage}>
@@ -26,14 +68,16 @@ function LoginCredPage() {
 
             <div className={style.inputs}>
                 <label>EMAIL</label>
-                <input type="email" placeholder="example@test.com" />
+                <input type="email" placeholder="example@test.com"  onChange={e =>  setEmail(e.target.value)}
+        value={email}/>
                 <label>PASSWORD</label>
-                <input type="password" placeholder="Min 6 charaters long" />
-                <button type="submit">LOGIN</button>
+                <input type="password" placeholder="Min 6 charaters long" onChange={e =>  setPassword(e.target.value)}
+        value={password}/>
+                <button type="submit" onClick={handleSubmit }>LOGIN</button>
+            <h1>{token}</h1>
             </div>
             </div>
             </div>
-            
             
         </div>
       </div>
